@@ -1,0 +1,4 @@
+1. npm run serve 启动后
+    地址栏输入 对应的  http://localhost:8081/index.html
+                    http://localhost:8081/ui.html
+                    即可访问对应的项目页面
