@@ -70,7 +70,13 @@
 export default {
     name: 'IndexPt',
     created() {
-        this.Setzmloverlin('我是林子墨')
+        this.Setzmloverlin('你爱自由胜过爱我，可我却偏偏把他当作氧气过活')
+        this.$http.getSiteConfig({
+            siteId: 60,
+            warn: true
+        }).then((data) => {
+            console.log(data);
+        })
     }
 }
 </script>

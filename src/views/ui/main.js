@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from "./router";
 import store from '../../store/index2'
 import {globalStore} from '../../store/mixin'
+import * as http from '../../common/service/services'
 Vue.config.productionTip = false
 
 import VConsole from 'vconsole'
@@ -23,6 +24,7 @@ if (window.location.href.indexOf('vconsole') !== -1) {
 }
 // 全局混入全局状态
 Vue.mixin(globalStore)
+Vue.prototype.$http = http
 new Vue({
   router,
   store,

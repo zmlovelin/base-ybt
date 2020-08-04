@@ -49,6 +49,7 @@ export default {
 </script>
 <style scoped>
 
+
   .main-con {
     width: 100%;
     height: 33.466667rem;
